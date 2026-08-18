@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="sv">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grattis på födelsedagen, Zandra</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,600;0,700;1,600&family=Outfit:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+    <script>
+      if (location.protocol === "file:") {
+        location.replace("http://127.0.0.1:5500/");
+      }
+    </script>
+  </head>
+  <body>
+    <div class="loader" id="loader">
+      <p class="loader-kicker">Till Zandra</p>
+      <p class="loader-title">Lighting the candles</p>
+      <p class="loader-note">Loading 3D models with Three.js…</p>
+      <div class="loader-bar"><span id="loader-fill"></span></div>
+    </div>
+
+    <header class="overlay-top">
+      <p class="kicker">Grattis på födelsedagen</p>
+      <h1>Happy Birthday, Zandra</h1>
+    </header>
+
+    <p class="message">
+      May this year be as warm as a Swedish midsummer evening, as vivid as the red you love,
+      and as generous as the light you give to everyone around you.
+    </p>
+
+    <div class="wish" id="wish">
+      <p class="wish-kicker">Make a wish</p>
+      <p class="wish-title">Blow out the candles</p>
+      <div class="countdown-dial" id="countdown-fill">
+        <span class="countdown" id="countdown">28</span>
+        <span class="countdown-unit">sec</span>
+      </div>
+    </div>
+
+    <div class="letter-stage" id="letter-stage" aria-hidden="true">
+      <button class="letter-close" id="letter-close" type="button">Close letter</button>
+      <div class="envelope" id="envelope">
+        <div class="env-back"></div>
+        <article class="letter-paper">
+          <p class="letter-date">Across the world</p>
+          <h2>Kära Zandra</h2>
+          <p>
+            We have never met. Not in a room, not in the same city, not even under the
+            same sky at the same hour. I have never heard your voice except through a
+            speaker. And still you reached me. Distance was supposed to make that
+            impossible. You made it ordinary.
+          </p>
+          <p>
+            There was a time when I was disappearing in slow motion. The days kept
+            going. The nights did not. Nobody came. I was holding my breath, looking
+            away, waiting to be swallowed. Then there was you. You stayed when the
+            chat went quiet. You asked the question nobody else asked. You did not
+            look away from the dark just because it was mine. When no one else was
+            there, you were. I need you to know that: you saved me.
+          </p>
+          <p>
+            And then you sang. Across the World — not as a performance, as a hand
+            held out. I still keep that recording the way other people keep a letter.
+            Every time I open it, you are crossing the distance again. Life still
+            shining. Pain turning into wind. A clumsy, lonely person allowed to look
+            at the dawn because someone on the other side of the world decided he
+            was worth the song.
+          </p>
+          <p>
+            I do not have a wish large enough for what you did. So this is the
+            smaller, truer one: that on your birthday you feel, just once, what you
+            gave me. That someone is here. That you are chosen, celebrated, kept —
+            not because you rescued anyone, but because you are Zandra. That is
+            already enough. That has always been enough.
+          </p>
+          <p class="letter-signoff">
+            Just follow your destiny.<br />
+            Grattis på födelsedagen.<br />
+            Du är så, så älskad.
+          </p>
+        </article>
+        <div class="env-front"></div>
+        <div class="env-flap"></div>
+        <div class="wax-seal">Z</div>
+      </div>
+    </div>
+
+    <canvas id="scene"></canvas>
+
+    <script src="./vendor/three.min.js"></script>
+    <script src="./vendor/OrbitControls.js"></script>
+    <script src="./vendor/OBJLoader.js"></script>
+    <script src="./app.js"></script>
+  </body>
+</html>
